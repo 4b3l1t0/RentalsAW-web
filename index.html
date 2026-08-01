@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rentals AW | Apartamentos en Panamá</title>
+  <meta name="description"
+    content="Descubre apartamentos seleccionados para rentas cortas en Panamá y abre cada opción directamente en Airbnb.">
+  <link rel="canonical" href="https://awpropertiespanama.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rentals AW | Vive Panamá">
+  <meta property="og:description" content="Apartamentos seleccionados para una estancia cómoda en Ciudad de Panamá.">
+  <meta property="og:url" content="https://awpropertiespanama.com/">
+  <meta property="og:image" content="https://awpropertiespanama.com/assets/images/hero-panama.webp">
+  <!-- <link rel="icon" href="assets/logo/aw-properties-black.png" type="image/png"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <script src="js/i18n.js" defer></script> -->
+  <script src="js/properties.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- <a class="brand" href="index.html" aria-label="Rentals AW, inicio">
+        <img src="assets/logo/aw-properties-black.png" alt="Rentals AW" width="78" height="60">
+      </a> -->
+      <nav class="site-nav" aria-label="Navegación principal">
+        <div class="site-nav__links">
+          <a class="site-nav__link" href="index.html" aria-current="page">Inicio</a>
+          <a class="site-nav__link" href="apartamentos.html">Apartamentos</a>
+          <a class="site-nav__link" href="#zonas">Zonas</a>
+          <a class="site-nav__link" href="#nosotros">Sobre nosotros</a>
+          <a class="site-nav__link" href="contacto.html">Contacto</a>
+        </div>
+        <a class="button button--outline header-whatsapp"
+          href="https://wa.me/50763554238?text=Hola%2C%20estoy%20interesado%20en%20un%20apartamento%20de%20AW%20Properties.">
+          WhatsApp
+        </a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__image" src="assets/images/hero-panama.webp"
+        alt="Sala contemporánea con vista panorámica de Ciudad de Panamá" width="1536" height="1024"
+        fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Rentas cortas en Panamá</p>
+        <h1 id="hero-title">Vive Panamá.<br>Siente la experiencia.</h1>
+        <p class="hero__lead">Apartamentos seleccionados para que disfrutes la ciudad con la comodidad de sentirte en
+          casa.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="apartamentos.html">Ver apartamentos</a>
+          <a class="button button--light" href="contacto.html">
+            Escríbenos
+          </a>
+        </div>
+      </div>
+      <div class="search-panel">
+        <form class="container search-form" data-property-filter data-results-target="#apartamentos"
+          aria-label="Buscar apartamentos">
+          <div class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <label for="home-zone">Zona</label>
+            <select id="home-zone" name="zone">
+              <option value="">Todas</option>
+              <option>Bella Vista</option>
+              <option>Avenida Balboa</option>
+              <option>Calle 50</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="9" cy="8" r="3" />
+              <path d="M3 20v-2a6 6 0 0 1 12 0v2M17 6a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 4.6V20" />
+            </svg>
+            <label for="home-guests">Huéspedes</label>
+            <select id="home-guests" name="guests">
+              <option value="">Cualquiera</option>
+              <option value="2">2 o más</option>
+              <option value="4">4 o más</option>
+              <option value="6">6 o más</option>
+              <option value="8">8 o más</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M3 20v-9M21 20v-7a2 2 0 0 0-2-2H8a3 3 0 0 0-3 3v3h16M8 11V8h5a3 3 0 0 1 3 3M3 17h18" />
+            </svg>
+            <label for="home-bedrooms">Habitaciones</label>
+            <select id="home-bedrooms" name="bedrooms">
+              <option value="">Cualquiera</option>
+              <option value="1">1 o más</option>
+              <option value="2">2 o más</option>
+              <option value="3">3 o más</option>
+              <option value="4">4 o más</option>
+            </select>
+          </div>
+          <button class="button button--dark" type="reset">Limpiar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="apartamentos">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Alojamientos que se adaptan a ti</p>
+            <h2>Apartamentos seleccionados para una estancia inolvidable.</h2>
+          </div>
+          <a class="text-link" href="apartamentos.html">Ver todos los apartamentos
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M5 12h14M14 7l5 5-5 5" />
+            </svg>
+          </a>
+        </div>
+        <div class="property-grid" data-property-grid="featured" data-reveal></div>
+        <div class="empty-state" data-empty-state hidden>
+          <h3>No encontramos coincidencias</h3>
+          <p>Prueba con una combinación diferente de filtros.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--compact section--surface" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="visually-hidden" hidden>Beneficios de Rentals AW</h2>
+        <div class="benefits" data-reveal>
+          <article class="benefit">
+            <span class="benefit__icon"><svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M3 11 12 3l9 8M5 10v10h14V10M9 20v-6h6v6" />
+              </svg></span>
+            <h3>Ubicaciones premium</h3>
+            <p>Apartamentos en zonas estratégicas de la ciudad.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="m12 2 8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V5l8-3Z" />
+                <path d="m8.5 12 2.2 2.2 4.8-5" />
+              </svg></span>
+            <h3>Calidad garantizada</h3>
+            <p>Espacios seleccionados para tu comodidad.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z" />
+                <path d="M9 8.5c.2 2.7 2.2 4.8 5 5.3" />
+              </svg></span>
+            <h3>Atención personalizada</h3>
+            <p>Estamos disponibles antes y durante tu estancia.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M16 3v4M8 3v4M3 10h18" />
+              </svg></span>
+            <h3>Flexibilidad total</h3>
+            <p>Opciones pensadas para distintas formas de viajar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros" aria-labelledby="about-title">
+      <div class="about-copy">
+        <div class="about-copy__inner" data-reveal>
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2 id="about-title">Pasión por la hospitalidad, compromiso con tu experiencia.</h2>
+          <p>En Rentals AW seleccionamos apartamentos para ofrecer estancias cómodas y memorables en Panamá, con
+            atención cercana en cada paso.</p>
+          <a class="button button--primary" href="contacto.html">Conoce cómo podemos ayudarte</a>
+        </div>
+      </div>
+      <div class="about__image">
+        <img src="assets/images/avenida-balboa.webp" alt="Terraza con vista a la bahía y el perfil urbano de Panamá"
+          width="1280" height="853" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section" id="zonas" aria-labelledby="zones-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Descubre la ciudad</p>
+            <h2 id="zones-title">Zonas para vivir Panamá a tu manera.</h2>
+          </div>
+        </div>
+        <div class="zones-grid" data-reveal>
+          <a class="zone-card" href="apartamentos.html?zona=bella-vista">
+            <img src="assets/images/bella-vista.webp" alt="" width="640" height="427" loading="lazy">
+            <span class="zone-card__content">
+              <h3>Bella Vista</h3>
+              <p>Conectada, dinámica y cerca de todo.</p>
+            </span>
+          </a>
+          <a class="zone-card" href="apartamentos.html?zona=calle-50">
+            <img src="assets/images/costa-del-este.webp" alt="" width="640" height="427" loading="lazy">
+            <span class="zone-card__content">
+              <h3>Calle 50</h3>
+              <p>Arquitectura moderna y comodidad urbana.</p>
+            </span>
+          </a>
+          <a class="zone-card" href="apartamentos.html?zona=avenida-balboa">
+            <img src="assets/images/avenida-balboa.webp" alt="" width="640" height="427" loading="lazy">
+            <span class="zone-card__content">
+              <h3>Avenida Balboa</h3>
+              <p>La ciudad frente a la bahía.</p>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Preguntas frecuentes</p>
+            <h2 id="faq-title">Lo esencial, antes de tu estancia.</h2>
+          </div>
+        </div>
+        <div class="faq-list" data-reveal>
+          <article class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false">¿Cómo realizo una reserva?<svg
+                  aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6" />
+                </svg></button></h3>
+            <div class="faq-answer" hidden>
+              <p>Abre el apartamento que te interesa en Airbnb para consultar disponibilidad y completar la reserva de
+                forma segura.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false">¿Puedo cancelar o modificar mi
+                reserva?<svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6" />
+                </svg></button></h3>
+            <div class="faq-answer" hidden>
+              <p>Las condiciones de cambio y cancelación aparecen en el anuncio de Airbnb antes de confirmar la reserva.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false">¿Qué incluye la estadía?<svg
+                  aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6" />
+                </svg></button></h3>
+            <div class="faq-answer" hidden>
+              <p>Cada anuncio detalla sus espacios, servicios y normas. Revisa esa información en Airbnb o escríbenos si
+                necesitas orientación.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3><button class="faq-question" type="button" aria-expanded="false">¿Cuál es el horario de entrada y
+                salida?<svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m6 9 6 6 6-6" />
+                </svg></button></h3>
+            <div class="faq-answer" hidden>
+              <p>El horario puede variar según el alojamiento. Encontrarás la información actualizada en el anuncio
+                correspondiente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <!--  <img src="assets/logo/aw-properties-white.png" alt="Rentals AW" width="100" height="88" loading="lazy"> -->
+          <p>Apartamentos de corta estancia en Panamá para disfrutar la ciudad con comodidad, estilo y la mejor
+            ubicación.</p>
+        </div>
+        <div class="footer-column">
+          <h2>Enlaces</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="apartamentos.html">Apartamentos</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Zonas</h2>
+          <ul class="footer-links">
+            <li><a href="apartamentos.html?zona=avenida-balboa">Avenida Balboa</a></li>
+            <li><a href="apartamentos.html?zona=calle-50">Calle 50</a></li>
+            <li><a href="apartamentos.html?zona=bella-vista">Bella Vista</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h2>Contáctanos</h2>
+          <ul class="footer-links">
+            <li><a href="contacto.html">Formulario de contacto</a></li>
+            <li><a
+                href="https://wa.me/50763554238?text=Hola%2C%20estoy%20interesado%20en%20un%20apartamento%20de%20AW%20Properties.">WhatsApp</a>
+            </li>
+            <li>Ciudad de Panamá, Panamá</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Rentals AW. Todos los derechos reservados.</span><span><a
+            href="terminos.html">Términos y condiciones</a> · <a href="privacidad.html">Política de
+            privacidad</a></span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+    href="https://wa.me/50763554238?text=Hola%2C%20estoy%20interesado%20en%20un%20apartamento%20de%20AW%20Properties."
+    data-whatsapp aria-label="Contactar a Rentals AW por WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z" />
+      <path d="M9 8.5c.2 2.7 2.2 4.8 5 5.3l1-1c.3-.3.6-.2.8-.1l2 1" />
+    </svg>
+  </a>
+</body>
+
+</html>
